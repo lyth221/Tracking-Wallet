@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title #{htmlWebpackPlugin.options.title}
+        meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1')
+        meta(content=htmlWebpackPlugin.options.keywords.toString())
+        meta(content=htmlWebpackPlugin.options.description name='description')
+        
+        //- link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700|Work+Sans:300,400,500,600,700')
+        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Work+Sans:300,400,500,600,700')
+        link(rel='stylesheet' type='text/css' href='/themes/css/font-awesome.min.css')
+        link(rel='stylesheet' type='text/css' href='/themes/css/bootstrap.min.css')
+        link(rel='stylesheet' type='text/css' href='/themes/css/classy-nav.css')
+        link(rel='stylesheet' type='text/css' href='/themes/css/owl.carousel.min.css')
+        link(rel='stylesheet' type='text/css' href='/themes/css/animate.css')
+        link(rel='stylesheet' type='text/css' href='/themes/css/magnific-popup.css')
+    body
+        #app    
+        script(type='text/javascript' src='/js/jquery.min.js')
+        script(type='text/javascript' src='/js/popper.min.js')
+        script(type='text/javascript' src='/js/bootstrap.min.js')
+        script(type='text/javascript' src='/js/jquery.mCustomScrollbar.min.js')
+        script(type='text/javascript' src=htmlWebpackPlugin.files.chunks.main.entry)
+
+        script(type='text/javascript' src='/js/themes/plugins.js')

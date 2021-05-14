@@ -1,0 +1,61 @@
+.app-sidebar__user {
+    .app-sidebar__user-avatar {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+    }
+    & > div {
+        max-width: calc(100% - 63px);
+    }
+}
+.custom-alert {
+    &.alert {
+        background-color: #fff;
+        padding: 9px 60px;
+        a, span {
+            font-size: 16px;
+            color: #4267b2;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    &.alert-info {
+        color: #3578e5;
+        border-color: #3578e5;
+        .icons {
+            background-color: #3578e5;
+        }
+    }
+    .icons {
+        position: absolute;
+        color: #fff;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        line-height: 44px;
+        width: 44px;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+.dropdown-menu > li {
+    cursor: pointer;
+    padding: 0.375rem 0.75rem;
+}
+.dropdown-pending {
+    margin-right: 0;
+    margin-left: auto;
+    .dropdown-menu {
+        right: 0 !important;
+        left: auto !important;   
+        transform: translate3d(0, 36px, 0px) !important;
+        & > li {
+            &:hover,
+            &.active {
+                color: #fff;
+                background-color: #009688;
+            }
+        }
+    }
+}

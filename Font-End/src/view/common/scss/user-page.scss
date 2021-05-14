@@ -1,0 +1,34 @@
+.table-user-page {
+    .ReactTable {
+        .rt-tbody .rt-td {
+            display: flex;
+            align-items: center;
+            padding: 10px 7px;
+        }
+        .rt-thead {
+            .rt-th, 
+            .rt-td {
+                padding: 10px 7px;
+                font-weight: 700;
+            }
+        }
+        .status-col {
+            justify-content: center;
+        }
+    }
+    .icons {
+        margin: 0;
+    }
+    .btn-delete {
+        margin-left: 8px;
+        text-align: center;
+        
+    }
+}
+.sc-confirm {
+    padding: 10px 30px;
+    font-size: 13px;
+    white-space: nowrap;
+    margin: 15px auto;
+    display: block;
+}

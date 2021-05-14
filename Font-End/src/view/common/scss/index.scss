@@ -1,0 +1,147 @@
+.search-bar {
+  padding-top: 6.5%;
+  padding-left: 30px;
+}
+
+.searchbox {
+  transition: border 0.2s linear;
+  font-size: 16px;
+  width: 50%;
+  background: #f5f8fa;
+  color: #000;
+  padding: 20px 0px 20px 20px;
+  height: 20px;
+  outline: none;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.search-btn {
+  background: #f5f8fa;
+}
+
+.search {
+  padding-right: 30px !important;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.info-block {
+  padding-top: 50px;
+}
+
+.p-info {
+  font-size: 18px;
+  color: #000;
+}
+
+.p-text {
+  /* padding-bottom: 5px;
+  padding-top: 5px; */
+  color: #000;
+  font-size: 18px;
+}
+
+.p-info-price p {
+  padding-top: 5px;
+}
+
+.block-title {
+  padding-top: 10px;
+}
+
+.hieu-luc {
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.srchList {
+  z-index: 3;
+  background-color: #f5f8fa;
+  padding-top: 25px;
+  margin-top: -15px;
+}
+
+ul {
+  list-style-type: decimal;
+  color: #363636;
+}
+
+.srchList-li {
+  z-index: 99;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.srchList-li:hover {
+  background-color: rgb(60, 140, 160);
+  color: azure;
+}
+
+.td-price {
+  text-align: center;
+  vertical-align: middle;
+  width: auto;
+  height: auto;
+  font-size: 14px;
+}
+
+.td-image {
+  text-align: center;
+  img {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+.Dropdown-control {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #333;
+  cursor: default;
+  outline: none;
+  padding: 11px 52px 8px 10px !important;
+  transition: all 200ms ease;
+}
+
+.Dropdown-option:hover {
+  background-color: rgb(60, 140, 160) !important;
+  color: azure !important;
+}
+
+.Dropdown-menu {
+  background-color: #f5f8fa !important;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-top: -1px;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Dropdown-control {
+  position: relative;
+  overflow: hidden;
+  background-color: #f5f8fa !important;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #333;
+  cursor: default;
+  outline: none;
+  padding: 8px 52px 8px 10px;
+  transition: all 200ms ease;
+}

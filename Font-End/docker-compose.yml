@@ -1,0 +1,53 @@
+version: '3'
+networks:
+  angia_sale:
+
+services:
+  sale_mongo:
+    image: "bitnami/mongodb:latest"
+    container_name: sale_mongo
+    environment:      
+      - MONGODB_USERNAME=${MONGODB_USERNAME}
+      - MONGODB_PASSWORD=${MONGODB_PASSWORD}
+      - MONGODB_ROOT_PASSWORD=${MONGODB_PASSWORD}
+      - MONGODB_DATABASE=${MONGODB_DATABASE}      
+    ports:
+      - 27017:27017
+    volumes:
+      - ./database/mongodb:/data/db
+    networks:
+      - angia_sale
+
+  sale_nginx:
+    image: nginx:stable-alpine
+    container_name: sale_nginx
+    ports:
+      - 9443:9443
+    volumes:
+      - ./conf/api/${NGINX_CONFIG_FOLDER}/nginx:/etc/nginx/conf.d
+      - ./conf/ssl:/etc/nginx/ssl
+    depends_on:
+      - sale_web
+    networks:
+      - angia_sale
+
+  sale_web:
+    build:
+      context: ./docker/api
+      dockerfile: Dockerfile
+    container_name: sale_web
+    working_dir: /var/www    
+    ports:
+      - 4000:4000
+      - 5000:5000
+    depends_on:
+      - sale_mongo      
+    volumes:
+      - .:/var/www
+    command: /bin/sh -c "${START_COMMAND}"
+    networks:
+      - angia_sale
+
+volumes:
+  dbdata:
+    driver: local

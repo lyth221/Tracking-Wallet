@@ -1,0 +1,5 @@
+module.exports = {
+    USER_MANAGER: "USER_MANAGER",
+    CREATE_EVENT: "CREATE_EVENT",
+    APPROVE_EVENT: "APPROVE_EVENT"
+}

@@ -1,0 +1,41 @@
+{
+    "app": {
+        "title": "Sale website",
+        "description": "Sale website",
+        "isDebug": true,
+        "autoLogin": true,
+        "jwt": {
+            "jwt_secret": "2conga",
+            "iss": "duiga.tuongot"
+        },
+        "google": {
+            "client_id": "",
+            "client_secret": ""
+        }
+    },    
+    "path": {
+        "src": "src",
+        "view": "src/view",
+        "model": "src/model",
+        "controller": "src/controller",
+        "log": "asset/log",
+        "temp": "asset/temp",
+        "upload": "asset/upload",
+        "public": "public",
+        "favicon": "public/img/favicon.ico"
+    },
+    "keywords": [
+        "SALE",
+        "ANGIA"
+    ],
+    "server": {
+        "port": 4000
+    },
+    "webpack": {
+        "port": 5000
+    },
+    "database": {
+        "name": "sscc_hcmut",
+        "uri": "mongodb://localhost:27017/"
+    }
+}

@@ -1,0 +1,24 @@
+import React from "react";
+import '../common/scss/components/RadioButton.scss';
+
+
+export default class CheckBox extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    handleChange(e) {
+        this.props.onChange(e);
+    }
+    render() {
+        const uuid = parseInt(Math.random() * 99999);
+        const { name, labelText, customClass, value } = this.props;
+        return (
+            <div className={"check-box " + customClass} >
+                <input type="checkbox" name={name} id={'checkbox-' + uuid} value={value}
+                    onChange={this.handleChange.bind(this)}
+                />
+                <label htmlFor={'checkbox-' + uuid}><span>{labelText}</span></label>
+            </div>
+        )
+    }
+}
